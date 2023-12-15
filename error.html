@@ -1,0 +1,31 @@
+<!-- views/error.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    h1 {
+      color: #cc0000;
+    }
+    h2 {
+      color: #555;
+    }
+    pre {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1><%= message %></h1>
+  <h2>Status: <%= error.status %></h2>
+  <pre><%= error.stack %></pre>
+</body>
+</html>
